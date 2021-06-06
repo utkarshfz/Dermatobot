@@ -1,7 +1,7 @@
 # Dermatobot
 
 
-Please add /API/weights/(the weight file) manually
+Please add /API/weight/(the weight file) manually
 
 
 Run:
