@@ -13,7 +13,11 @@
     "react-chat-ui": "^0.4.0",
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
-    "axios": "0.21.1"
+    "axios": "0.21.1",
+    "firebase": "^8.6.5",
+    "bootstrap": "^5.0.0-alpha1",
+    "react-bootstrap": "^1.6.1",
+    "react-router-dom": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
