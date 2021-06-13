@@ -172,16 +172,18 @@ function Chat() {
 
     return (
         
-        <div style={{position:"absolute" , top:"0px",height:"100%",width:"100%",backgroundColor:"black"}} >
+        <div style={{position:"absolute" , top:"0px",height:"100%",width:"100%",backgroundColor:"rgb(0, 10, 26)"}} >
             
             <div style={{postion:"fixed",top:"0px",height:"95%",overflow:"scroll"}} >
-            <div style={{justifyContent:"center",display:"flex",backgroundColor:"green"}}> 
-            <h1 style={{color:"orange"}}>DERMATOBOT</h1>
-            <div className="w-100 text-center mt-2" >
-            <Button variant="link" onClick={ handleLogout} style={{backgroundColor:"red"}}> Log Out
+            <div style={{backgroundColor:"rgb(217, 217, 217)",borderRadius: "0px 0px 0px 30px"}}> 
+            <h1 style={{display:'inline-block',color:"rgb(230, 115, 0)",width:"90%"}}>DERMATOBOT</h1>
+            <Button  onClick={ handleLogout} style={{backgroundColor:"rgb(255, 112, 77)",width:"10%"}}>Log Out
             </Button>
             </div>
-            </div>
+            
+            
+            
+            
 
             <ChatFeed
             messages={messages} // Array: list of message objects
@@ -199,14 +201,14 @@ function Chat() {
                 chatbubble: {
                 borderRadius: 25,
                 padding: 20,
-                backgroundColor:"blue"
+                backgroundColor:"rgb(0, 102, 204)"
                 }
             }
             }
             />
             </div>
             
-            <div style={{position:"fixed" , bottom:"0px",width:"100%",backgroundColor:"black"}}>
+            <div style={{position:"fixed" , bottom:"0px",width:"100%",backgroundColor:"rgb(153, 206, 255)",borderRadius: "0px 0px 15px 15px"}}>
                 <input type='file' id='file' ref={inputFile} style={{display: 'none'}} onChange={setImageFile}/>
                 <CameraIcon style={{width:"3%",height:"0.6%",color:"blue"}} onClick={() => update()}></CameraIcon>
                 <TextField size="small" style={{width:"94%",backgroundColor:"white"}} multiline  label="Input...." variant="filled" onChange={(event)=>{update_text(event.target.value)}}/>
