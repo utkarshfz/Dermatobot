@@ -4,6 +4,9 @@ import {TextField} from '@material-ui/core/';
 import CameraIcon from '@material-ui/icons/Camera';
 import SendIcon from '@material-ui/icons/Send';
 import axios from 'axios'
+import { Card, Button,Alert } from "react-bootstrap"
+import { useAuth} from "./AuthContext"
+import {useHistory} from "react-router-dom"
 
 
 
@@ -19,12 +22,23 @@ function Chat() {
     })])
 
     
-
+    const {currentUser , logout}=useAuth()
+            const history=useHistory()
     const [text,update_text]=useState(null)
 
     const [top_k_classes,set_top_k_classes]=useState([])
 
     const inputFile = useRef(null) 
+    async function handleLogout()
+            {
+                //setError('')
+                try {
+                    await logout()
+                    history.push("/login")
+                }catch{
+                    //setError("failed to Logout")
+                }
+            }
 
     const update = () => {
         // `current` points to the mounted file input element
@@ -148,7 +162,8 @@ function Chat() {
 
             // update_text(null)
 
-
+            
+            
 
 
 
@@ -162,6 +177,10 @@ function Chat() {
             <div style={{postion:"fixed",top:"0px",height:"95%",overflow:"scroll"}} >
             <div style={{justifyContent:"center",display:"flex",backgroundColor:"green"}}> 
             <h1 style={{color:"orange"}}>DERMATOBOT</h1>
+            <div className="w-100 text-center mt-2" >
+            <Button variant="link" onClick={ handleLogout} style={{backgroundColor:"red"}}> Log Out
+            </Button>
+            </div>
             </div>
 
             <ChatFeed
