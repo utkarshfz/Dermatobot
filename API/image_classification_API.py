@@ -20,6 +20,7 @@ from flask_cors import CORS
 
 app = flask.Flask(__name__)
 CORS(app)
+
 model = None
 
 def load_model():
@@ -44,7 +45,7 @@ def prepare_image(image, target):
     # return the processed image
     return image
 
-
+@app.route('/predict',methods=['POST'])
 def predict():
     # initialize the data dictionary that will be returned from the
     # view
