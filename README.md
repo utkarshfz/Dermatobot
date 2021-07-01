@@ -19,7 +19,7 @@ Model Link: {[https://drive.google.com/file/d/1n74Tzh-zAvp1ei4F1bz_2yKh_R3CIwSC/
 4)   RUN CONTAINERS
  
  
-    docker-compse up
+    docker-compose up
  
  
     Wait .....It may take upto 30 minutes for the containers to set up
