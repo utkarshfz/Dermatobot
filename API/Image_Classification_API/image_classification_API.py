@@ -37,7 +37,8 @@ def prepare_image(image, target):
 
     # resize the input image and preprocess it
     image = image.resize(target,Image.ANTIALIAS)
-    image = img_to_array(image)
+    # image = img_to_array(image)
+    image=np.asarray(image)
     image=tf.keras.applications.efficientnet.preprocess_input(image)
     image=np.expand_dims(image, axis=0)
 

@@ -1,4 +1,3 @@
-flask-restful
 flask_cors
 pandas
 numpy
@@ -11,4 +10,3 @@ shapely
 flask
 tensorflow
 tensorflow_hub
-flask-ngrok

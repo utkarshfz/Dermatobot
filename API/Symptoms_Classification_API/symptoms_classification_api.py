@@ -6,13 +6,11 @@ from flask_cors import CORS
 
 import flask
 from flask import Flask,jsonify
-from flask_restful import Resource, Api, reqparse
 import pandas as pd
 import ast
 import warnings, re,math, datetime, time
 start_time = time.time()
 from datetime import timedelta
-# !pip install flask-ngrok
 warnings.filterwarnings("ignore")
 import math
 import pandas as pd
@@ -44,7 +42,7 @@ import os
 import pandas as pd
 import scipy.spatial
 
-print("Loading Model!")
+print("Loading Universal Sentence Encoder!")
 module_url="https://tfhub.dev/google/universal-sentence-encoder/4"
 model = hub.load(module_url)
 print("Model Loaded!")
@@ -57,15 +55,12 @@ nltk.download("punkt")
 nltk.download("wordnet")
 
 
-from flask import Flask
-from flask_ngrok import run_with_ngrok
-app = Flask(__name__)
+app = flask.Flask(__name__)
 CORS(app)
-run_with_ngrok(app)   
+# run_with_ngrok(app)   
 
 from nltk.stem import WordNetLemmatizer
 
-api = Api(app)
 
 
 def clean(text):
@@ -191,7 +186,7 @@ def predict():
         #  print(top_k)
          text=flask.request.form["text"]
          text=clean(text)
-         df=pd.read_csv('/symptoms/1.csv')
+         df=pd.read_csv('symptoms/1.csv')
          y=df['sl.no']
          X=df['Symptoms']
          for i in X:
@@ -218,5 +213,6 @@ def predict():
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
+    print("Staring Server!!")
     app.run(host='0.0.0.0',port=5002)
