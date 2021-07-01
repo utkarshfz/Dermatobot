@@ -1,27 +1,27 @@
 version: "3.9"
 services:
     
-    # chat-ui:
-    #     build: ./chatui
-    #     ports:
-    #         - "80:80"
-    #     volumes:
-    #         - '.:/app'
-    #         - '/app/node_modules'
-    #     environment:
-    #         - CHOKIDAR_USEPOLLING=true
+    chat-ui:
+        build: ./chatui
+        ports:
+            - "80:80"
+        volumes:
+            - '.:/app'
+            - '/app/node_modules'
+        environment:
+            - CHOKIDAR_USEPOLLING=true
 
-    # image_classification_api:
-    #     build: ./API/Image_Classification_API
-    #     ports:
-    #         - "5001:5001"
-    #     volumes:
-    #         - '.:/image_classification_api'
-    #     deploy:
-    #         resources:
-    #             reservations:
-    #                 devices:
-    #                 - capabilities: [gpu]
+    image_classification_api:
+        build: ./API/Image_Classification_API
+        ports:
+            - "5001:5001"
+        volumes:
+            - '.:/image_classification_api'
+        deploy:
+            resources:
+                reservations:
+                    devices:
+                    - capabilities: [gpu]
 
     symptoms_classification_api:
         build: ./API/Symptoms_Classification_API
