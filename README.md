@@ -4,7 +4,10 @@
  
 Run:
 1) Download the models and save it at API/Image_Classification_API/model/<Place model {[https://drive.google.com/file/d/1n74Tzh-zAvp1ei4F1bz_2yKh_R3CIwSC/view?usp=drive_web](url)} here>
+
 2)cd Dermatobot/
+
+
 3)
 BUILD
     docker-compose build
