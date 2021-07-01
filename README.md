@@ -24,7 +24,7 @@ Model Link: https://drive.google.com/file/d/1n74Tzh-zAvp1ei4F1bz_2yKh_R3CIwSC/vi
  
     
  
-     Wait .....It may take upto 30 minutes for the containers to set up
+     *****Wait .....It may take upto 30 minutes for the containers to set up****
 
 5) Open browser .Go to localhost
 
