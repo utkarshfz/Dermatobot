@@ -1,0 +1,14 @@
+flask-restful
+flask_cors
+pandas
+numpy
+scipy
+matplotlib
+nltk
+sklearn
+geopy
+shapely
+flask
+tensorflow
+tensorflow_hub
+flask-ngrok

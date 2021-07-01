@@ -57,7 +57,7 @@ function Chat() {
                 "image",event.target.files[0]
             );
                 
-            axios.post('http://127.0.0.1:5000/predict',formData)
+            axios.post('http://localhost:5001/predict',formData)
             .then(function (response) {
 
                 // console.log(response.data.predictions.slice(1,6));
@@ -126,7 +126,7 @@ function Chat() {
             // console.log(formData)
 
         // console.log(top_k_classes[0])
-        axios.post('http://da4176b06998.ngrok.io/predict',
+        axios.post('http://localhost:5002/predict',
         formData
         )
             .then(function (response) {

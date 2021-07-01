@@ -2,7 +2,8 @@
 
 # dependencies
 chatui/node_modules/
-API/weight/EffectiveNetB4_80.h5
+**/model/*.h5
+!**/model/.gitkeep
 
 Model/
 

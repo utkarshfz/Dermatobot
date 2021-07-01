@@ -28,7 +28,7 @@ def load_model():
     # pre-trained on ImageNet and provided by Keras, but you can
     # substitute in your own networks just as easily)
     global model
-    model = keras.models.load_model('weight/EffectiveNetB4_80.h5')
+    model = keras.models.load_model('model/EffectiveNetB4_80.h5')
 
 def prepare_image(image, target):
     # if the image mode is not RGB, convert it
@@ -121,4 +121,4 @@ if __name__ == "__main__":
         "please wait until server has fully started"))
     load_model()
     print(model.summary())
-    app.run()
+    app.run(host='0.0.0.0',port=5001)
