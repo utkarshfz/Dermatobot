@@ -11,14 +11,12 @@ Model Link: {[https://drive.google.com/file/d/1n74Tzh-zAvp1ei4F1bz_2yKh_R3CIwSC/
 2) cd Dermatobot/
 
 
-3)
-BUILD
+3)   BUILD
  
  
     docker-compose build
 
-4)
-RUN CONTAINERS
+4)   RUN CONTAINERS
  
  
     docker-compse up
