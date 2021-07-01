@@ -7,6 +7,7 @@ Run:
  
 Model Link: {[https://drive.google.com/file/d/1n74Tzh-zAvp1ei4F1bz_2yKh_R3CIwSC/view?usp=drive_web](url)}
  
+ 
 2)cd Dermatobot/
 
 
