@@ -54,7 +54,7 @@ CORS(app)
 @app.route("/predict", methods=["POST"])
 def predict():
    text=flask.request.form["text"]
-   df=pd.read_csv('/content/2.csv')
+   df=pd.read_csv('2.csv')
    for i in range(len(df)):
      if df.iloc[i,0]==text:
        return df.iloc[i,1]
