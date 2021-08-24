@@ -7,12 +7,31 @@ import axios from 'axios'
 import { Card, Button,Alert } from "react-bootstrap"
 import { useAuth} from "./AuthContext"
 import {useHistory} from "react-router-dom"
+//import 'public-ip'
 
-
-
+//import { NetworkInfo } from "react-native-network-info";
+//import "ec2-publicip"
 
 
 function Chat() {
+
+//	const publicIp = require('public-ip');
+//	const ip=require('ip')
+//	console.log( publicIp.v4());
+//	publicIp.v4().then(res=>console.log(res))
+
+//var ec2 = require("ec2-publicip");
+//ec2.getPublicIP(function (error, ip) {
+ //   	if (error) {
+   // 		console.log(error);
+    //	}
+      //  console.log("Instance Public IP: ", ip);
+   // });
+//const ip=request('http://169.254.169.254/latest/meta-data/public-ipv4')
+//console.log(ip)
+//axios.get('http://169.254.169.254/latest/meta-data/public-ipv4').then(res=>{console.log(res)})
+// const ip='http://54.82.53.53'
+const ip='http://0.0.0.0'
     const [messages,set_messages] = useState([new Message({
         id:1,
         message:"Hi I'm Dermatobot, a bot for dermatological diagnosis!"
@@ -48,7 +67,9 @@ function Chat() {
 
       const setImageFile = (event) =>{
           
-
+	
+//	const ipv4Address = await NetworkInfo.getIPV4Address();
+//console.log(ipv4Address);
             // Create an object of formData
             const formData = new FormData();
             
@@ -57,7 +78,7 @@ function Chat() {
                 "image",event.target.files[0]
             );
                 
-            axios.post('http://localhost:5001/predict',formData)
+            axios.post(ip+':5001/predict',formData)
             .then(function (response) {
 
                 // console.log(response.data.predictions.slice(1,6));
@@ -126,7 +147,7 @@ function Chat() {
             // console.log(formData)
 
         // console.log(top_k_classes[0])
-        axios.post('http://localhost:5002/predict',
+        axios.post(ip+':5002/predict',
         formData
         )
             .then(function (response) {
@@ -135,14 +156,39 @@ function Chat() {
                 const new_message=[new Message({
                     id:1,
                     message:"Based on the your images and your description you may be suffering from:   "+response['data'].resultant_class
-                }),new Message({
-                    id:1,
-                    message:"Want to test again...Please upload another image!!!"
                 })]
                 
                 
                 set_messages(messages =>([...messages,...new_message]))
-
+		
+		const disease=response['data'].resultant_class
+                const diseaseForm=new FormData();
+                diseaseForm.append(
+                    "disease",disease
+                );
+		
+		axios.post(ip+':5003/predict',diseaseForm).then(function(treatment){
+                    console.log(treatment['data'].treatment)
+                    const new_message=[new Message({
+                        id:1,
+                        message:"Recommended Treatment :   "+treatment['data'].treatment
+                    }),new Message({
+                        id:1,
+                        message:"Want to test again...Please upload another image!!!"
+                    })]
+			set_messages(messages =>([...messages,...new_message]))
+                }).catch(function (error) {
+                    console.log(error)
+                    
+          
+                    const new_message=[new Message({
+                        id:1,
+                        message:"Oops something went wrong!!!"
+                    })]
+                    
+                    
+                    set_messages(messages =>([...messages,...new_message]))
+                });
                 
             })
             .catch(function (error) {

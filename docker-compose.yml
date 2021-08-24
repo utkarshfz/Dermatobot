@@ -19,11 +19,6 @@ services:
             - "5001:5001"
         volumes:
             - '.:/image_classification_api'
-        deploy:
-            resources:
-                reservations:
-                    devices:
-                    - capabilities: [gpu]
 
     symptoms_classification_api:
         build: ./API/Symptoms_Classification_API
@@ -31,11 +26,11 @@ services:
             - "5002:5002"
         volumes:
             - '.:/symptoms_classification_api'
-        deploy:
-            resources:
-                reservations:
-                    devices:
-                    - capabilities: [gpu]
 
-   
 
+    treatment_recommender_api:
+        build: ./API/Treatment_Recommender_API
+        ports:
+            - "5003:5003"
+        volumes:
+            - '.:/treatment_recommender_api'
