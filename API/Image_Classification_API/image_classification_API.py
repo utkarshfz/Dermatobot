@@ -86,7 +86,7 @@ def predict():
             "alopecia",
             "boils",
             "bullous pemphigoid",
-            "dermatofibroma",
+            "dermatofibronoma",
             "eczema asteatotic",
             "flea_bites",
             "flexural psoriasis",
