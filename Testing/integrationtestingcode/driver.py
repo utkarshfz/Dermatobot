@@ -68,9 +68,9 @@ def print_results(accuracies):
                 print(i)
                 print("correct result = ",accuracies[i][0]," total test cases = ",accuracies[i][1])
 
-URL1="http://f41b-35-237-53-80.ngrok.io/get"#copyofparrot.py
-URL = "http://1c0d-34-74-177-192.ngrok.io/get"#final_app.py
-BASE_URI = "http://c064-35-231-138-180.ngrok.io/predict"#untitled.py
+URL1="http://f41b-35-237-53-80.ngrok.io/get"#paraphrazing_api.py
+URL = "http://1c0d-34-74-177-192.ngrok.io/get"#symptom_classify.py
+BASE_URI = "http://c064-35-231-138-180.ngrok.io/predict"#image_classify.py
 path="C:\\Users\\SHIVANSH\\Desktop\\text\\6th Sem\\Capstone 1\\Data_17-25\\"
 
 accuracies=system_tests(URL1,URL,BASE_URI,path)
