@@ -1,0 +1,26 @@
+Disease_name,Link
+acne vulgaris,
+Basal Cell Carcinoma,https://www.kaggle.com/sshikamaru/lyme-disease-rashes
+Lyme Disease Rashes,https://www.bing.com/images/search?q=actinic+cheilitis&form=HDRSC3&first=1&tsc=ImageBasicHover
+actinic cheilitis,https://www.bing.com/images/search?q=bullous%20pemphigoid&qs=MM&form=QBIR&sp=1&pq=bullous%20&sc=8-8&cvid=F9EAABD3419E41B3841435865B3D5025&first=1&tsc=ImageBasicHover
+Bullous Pemphigoid Rash,https://www.bing.com/images/search?q=vitiligo%20skin&qs=MM&form=QBIR&sp=7&pq=vitiligo%20&sk=MM6&sc=8-9&cvid=11710C86C9CE4E7593EB0343BD9A4749&first=1&tsc=ImageBasicHover
+vitiligo,https://www.bing.com/images/search?q=Psoriasis&qs=n&form=QBIR&sp=-1&sc=0-0&cvid=3C1D8CDFC0A7444E8158542FF5E25EA9&first=1&tsc=ImageBasicHover
+Psoriasis Bumps,https://www.bing.com/images/search?q=Tinea%20Corporis&qs=n&form=QBIRMH&sp=-1&pq=mongolian%20spot&sc=8-14&cvid=B728E5DFB57041AB861ECAB08ABC40EB&first=1&tsc=ImageBasicHover
+Tinea Corporis Rash,https://www.bing.com/images/search?q=alopecia&qs=n&form=QBIRMH&sp=-1&pq=alopecia&sc=8-8&cvid=38F2243FE58243198FC0900270F29BB0&first=1&tsc=ImageBasicHover
+alopecia,https://www.bing.com/images/search?q=Foot%20corn&qs=n&form=QBIR&sp=-1&pq=foot%20corn&sc=8-9&cvid=0D683232090043DABECE7A02074E082E&first=1&tsc=ImageBasicHover
+Foot corn,https://www.bing.com/images/search?q=flexural%20psoriasis&qs=MM&form=QBIRMH&sp=1&pq=flexural%20pso&sc=8-12&cvid=D2CA0563F0E84FBAB14A63E42C732610&first=1&tsc=ImageBasicHover
+flexural psoriasis,https://www.bing.com/images/search?q=rosacea&qs=MM&form=QBIRMH&sp=1&ghc=1&pq=rosacea&sc=8-7&cvid=4F1510FC00184CD5A445D878E3990C07&first=1&tsc=ImageBasicHover
+rosacea,https://www.bing.com/images/search?q=melanocytic%20nevi%20&qs=n&form=QBIRMH&sp=-1&pq=melanocytic%20nevi%20of%20ski&sc=1-23&cvid=3B32289034694EBD8A0F192C378EC4F9&first=1&tsc=ImageBasicHover
+melanocytic nevi ,https://www.bing.com/images/search?q=dermatofibroma&qs=MM&form=QBIRMH&sp=1&pq=dermato%20fib&sc=8-11&cvid=5453201673604B2E9AEA349C9EEAE933&first=1&tsc=ImageBasicHover
+dermatofibroma,https://www.bing.com/images/search?q=seborrheic%20keratosis&qs=NH&form=QBIRMH&sp=1&pq=sebrrric%20ker&sc=8-12&cvid=A80EED8EA2C646EBBDBD3C7B5614016E&first=1&tsc=ImageBasicHover
+seborrheic keratosis,https://www.bing.com/images/search?q=eczema%20asteatotic&qs=MM&form=QBIRMH&sp=1&ghc=1&pq=eczema%20aste&sc=5-11&cvid=8BEAAACBC54547A580DF93C74D167125&first=1&tsc=ImageBasicHover
+eczema asteatotic,https://www.bing.com/images/search?q=keloid&qs=n&form=QBIR&sp=-1&pq=kelo&sc=8-4&cvid=408FFC88F91647A699AA6DB0BE60871A&first=1&tsc=ImageBasicHover
+keloid,https://www.bing.com/images/search?q=boils&qs=n&form=QBIR&sp=-1&pq=boils&sc=8-5&cvid=A2D47DF3BA1541A48B5B960AF1BE65E3&first=1&tsc=ImageBasicHover
+boils,https://www.bing.com/images/search?q=Striae&qs=n&form=QBIR&sp=-1&pq=striae&sc=8-6&cvid=A1082A7AF0BA4F69A46D8373BCE492A8&first=1&tsc=ImageBasicHover
+Striae,https://www.bing.com/images/search?q=Hives+Skin+Rash&form=RESTAB&first=1&tsc=ImageBasicHover
+Hives,https://www.bing.com/images/search?q=kerion&qs=n&form=QBIR&sp=-1&pq=kerion&sc=8-6&cvid=BCDFBAAAC462456193D97FABD2338A04&first=1&tsc=ImageBasicHover
+kerion,https://www.bing.com/images/search?q=flea%20bites&qs=MM&form=QBIR&sp=1&pq=flea%20&sc=8-5&cvid=D729F69035D349E09477A33475537B5D&first=1&tsc=ImageBasicHover
+flea bites,https://www.bing.com/images/search?q=scabies&qs=n&form=QBIR&sp=-1&pq=sca&sc=8-3&cvid=9F0E9A1B93D2488D817B962AAB53EC85&first=1&tsc=ImageBasicHover
+scabies,https://www.bing.com/images/search?q=nail+melanoma&form=HDRSC3&first=1&tsc=ImageBasicHover
+nail melanoma,https://www.bing.com/images/search?q=prurigo%20nodularis&qs=MM&form=QBIRMH&sp=1&pq=purigo%20noudla&sc=8-13&cvid=98D8BA4FA5884176B064F9EA4F047737&first=1&tsc=ImageBasicHover
+prurigo nodularis,

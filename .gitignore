@@ -5,5 +5,5 @@ chatui/node_modules/
 **/model/*.h5
 !**/model/.gitkeep
 
-Model/
+Model/Data/
 
